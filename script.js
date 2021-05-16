@@ -8,6 +8,15 @@ function heart(){
            
   }
 
+  function cardPlay(){
+      const cardPlayButton = document.querySelectorAll('.card-play')
+      for(let i=0; i<cardPlayButton.length; i++){
+          cardPlayButton[i].addEventListener('click', (e)=>{
+              location.href ="album.html"
+          })
+      }
+  }
+
   const audio = document.getElementById("myAudio");
   const playButton = document.querySelectorAll(".play");
  /*  const smallPlayButton = document.querySelector("#smallFooter .play"); */
@@ -58,4 +67,5 @@ function heart(){
     forward();
     restart();
     heart();
+    cardPlay();
   };

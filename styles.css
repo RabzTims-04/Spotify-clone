@@ -174,7 +174,7 @@ header img{
     padding: 12px 96px 4px;
 }
 
-#personalDetails p{
+#personalDetails p a{
     color: var(--greenFocus);
 }
 
@@ -995,7 +995,8 @@ z-index:2;
     /* z-index: 2; */
 }
 
-.artist-cards .card :hover::after{
+
+.artist-cards .card:hover::after{
     content: "";
     position: absolute;
     top: 0;
@@ -1004,6 +1005,7 @@ z-index:2;
     width: 100%;
     background-color:  rgba(0,0,0,0.4);
 }
+
 
 /* #cardsDeck .second-row .card::before {
     content: '';
@@ -1056,7 +1058,6 @@ z-index:2;
     transform: scale(0);
     transition: transform 0.1s;
 }
-
 .card-play::before {
     content: '';
     display: block;
