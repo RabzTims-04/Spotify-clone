@@ -882,6 +882,14 @@ p.small{
     color: rgb(201, 199, 199);
 }
 
+.fa-heart{  
+   color: white;   
+}
+
+.fa-heart-o{
+    color: grey;
+}
+
 /* id of table  */
 #albumList{
     padding: 0 0 10rem 0;
