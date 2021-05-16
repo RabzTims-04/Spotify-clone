@@ -17,6 +17,26 @@ function heart(){
       }
   }
 
+  function queenSong(){
+      const queenPlayButton = document.querySelectorAll('.queen-play')
+      const queenAudio = document.getElementById('queen-audio')
+      for(let i=0; i<queenPlayButton.length; i++){
+        queenPlayButton[i].addEventListener('click',(e)=>{
+        if(queenPlayButton[i].innerText == "PLAY"){
+            queenAudio.play()
+            queenPlayButton[i].innerText = `PAUSE`;
+        }
+        else{
+            queenAudio.pause()
+            queenPlayButton[i].innerText = 'PLAY'
+        }
+        
+        })
+
+      }
+      
+  }
+
   const audio = document.getElementById("myAudio");
   const playButton = document.querySelectorAll(".play");
  /*  const smallPlayButton = document.querySelector("#smallFooter .play"); */
@@ -68,4 +88,5 @@ function heart(){
     restart();
     heart();
     cardPlay();
+    queenSong();
   };
