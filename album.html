@@ -504,96 +504,9 @@
     </div> 
     <!-- Footer for small screen END-->
 
-    <script>
+    <script src="https://use.fontawesome.com/8f1caaa532.js"></script>
 
-      function heart(){
-        const heartIcon = document.querySelectorAll('.heart-icon')
-        for(let i=0; i<heartIcon.length;i++){
-          heartIcon[i].addEventListener('click',function(e){
-          e.currentTarget.classList.toggle('fa-heart-o')
-        })
-        }
-       
-      }
-    </script>
-
-    <script>
-    const audio = document.getElementById("myAudio");
-    const playButton = document.querySelector(".play");
-    const smallPlayButton = document.querySelector("#smallFooter .play");
-    const pauseButton = document.querySelector(".pause");
-    const smallPauseButton = document.querySelector("#smallFooter .pause");
-    function play() {
-      playButton.addEventListener("click", function (e) {
-        audio.play();
-        playButton.style.visibility = "hidden";
-        pauseButton.style.visibility = "visible";
-      });
-      pauseButton.addEventListener("click", function (e) {
-        audio.pause();
-        pauseButton.style.visibility = "hidden";
-        playButton.style.visibility = "visible";
-      });
-    }
-
-    function smallplay() {
-      smallPlayButton.addEventListener("click", function (e) {
-        audio.play();
-        smallPlayButton.style.visibility = "hidden";
-        smallPauseButton.style.visibility = "visible";
-      });
-      smallPauseButton.addEventListener("click", function (e) {
-        audio.pause();
-        smallPauseButton.style.visibility = "hidden";
-        smallPlayButton.style.visibility = "visible";
-      });
-    }
-
-    function backward() {
-      const previousButton = document.querySelector(".fa-step-backward");
-      previousButton.addEventListener("click", function (e) {
-        audio.currentTime -= 30.0;
-      });
-    }
-
-    function smallBackward() {
-      const smallPreviousButton = document.querySelector("#smallFooter .fa-step-backward");
-      smallPreviousButton.addEventListener("click", function (e) {
-        audio.currentTime -= 30.0;
-      });
-    }
-
-    function forward() {
-      const nextButton = document.querySelector(".fa-step-forward");
-      nextButton.addEventListener("click", function (e) {
-        audio.currentTime += 30.0;
-      });
-    }
-
-    function smallForward() {
-      const smallNextButton = document.querySelector("#smallFooter .fa-step-forward");
-      smallNextButton.addEventListener("click", function (e) {
-        audio.currentTime += 30.0;
-      });
-    }
-
-    function restart() {
-      const repeatButton = document.querySelector(".repeat");
-      repeatButton.addEventListener("click", function () {
-        audio.currentTime = 0.0;
-      });
-    }
-    window.onload = function () {
-      play();
-      smallplay()
-      backward();
-      smallBackward()
-      forward();
-      smallForward()
-      restart();
-      heart();       
-    };
-    </script>
+    <script src="script.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -602,7 +515,7 @@
     integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
     crossorigin="anonymous"></script>
 
-    <script src="https://use.fontawesome.com/8f1caaa532.js"></script>
+    
 
   </body>
 </html>
