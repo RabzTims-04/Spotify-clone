@@ -38,11 +38,11 @@ function heart(){
   }
 
   const audio = document.getElementById("myAudio");
-  const playButton = document.querySelectorAll(".play");
+  const playButton = document.querySelectorAll(".play-pause");
  /*  const smallPlayButton = document.querySelector("#smallFooter .play"); */
-  const pauseButton = document.querySelectorAll(".pause");
+  /* const pauseButton = document.querySelectorAll(".pause"); */
  /*  const smallPauseButton = document.querySelector("#smallFooter .pause"); */
-  function play() {
+/*   function play() {
     for(let i=0; i<playButton.length; i++){
       playButton[i].addEventListener("click", function (e) {
       audio.play();
@@ -55,6 +55,23 @@ function heart(){
       playButton[i].style.visibility = "visible";
     });
     }  
+  } */
+
+  function play(){
+      for(let i=0; i<playButton.length; i++){
+        playButton[i].addEventListener('click', (e)=>{
+            if(audio.paused){
+              audio.play()
+              playButton[i].classList.remove('fa-play-circle')
+              playButton[i].classList.add('fa-pause-circle')  
+            }
+            else{
+              audio.pause()
+              playButton[i].classList.remove('fa-pause-circle')
+              playButton[i].classList.add('fa-play-circle')
+            }
+        })
+      }  
   }
 
   function backward() {
