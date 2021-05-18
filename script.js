@@ -151,29 +151,46 @@ function heart(){
   
   .then((behom) =>{ console.log(behom);
 
-    let followButton = document.querySelector('.artist-follow')
-    let eminemPage = document.querySelector('a[href="eminem.html"] img')
-    let eminemCard = document.querySelectorAll('.eminemCards img')
-     console.log(followButton);
-    console.log(eminemCard);
-    console.log(eminemPage);
-    
-      console.log('click');
-
-      
-        for(let i=0; i<eminem.data.length; i++){
-
-          eminemCard[i].classList.add('img-fluid')
-          eminemCard[i].src = eminem.data[i].album.cover
+   /*  let behomButton = document.querySelector('.artist-follow')
+    let behomPage = document.querySelector('a[href="eminem.html"] img') */
+    let behomCard = document.querySelectorAll('.eminemCards img')
+        for(let i=0; i<behom.data.length; i++){
+          behomCard[i].classList.add('img-fluid')
+          behomCard[i].src = behom.data[i].album.cover
         }
 
   
   })
    
-  .catch(err => { console.error(err);
+  .catch(err => { 
+    console.error(err);
   });
 
   }
+
+  const MetallicButton = function(){
+    fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=metallica", {
+      "method": "GET",
+      "headers": {
+          "x-rapidapi-key": "9711bd8aa6msh6284e18a8f73758p17b3bfjsndd4d8e4e8ff4",
+          "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com"
+      }
+  })
+  .then((response) => response.json())
+  
+  .then((metal) =>{ console.log(metal);
+    let metalCard = document.querySelectorAll('.eminemCards img')
+    for(let i=0; i<metal.data.length; i++){
+      metalCard[i].classList.add('img-fluid')
+      metalCard[i].src = metal.data[i].album.cover
+    }
+  })
+   
+  .catch(err => { console.error(err);
+  });
+
+  } 
+ 
 
   window.onload = function () {
     play();
@@ -182,27 +199,6 @@ function heart(){
     restart();
     heart();
     cardPlay();
-    queenSong();
+  /*   queenSong(); */
    
-
-   
-
-    
-    fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=metallica", {
-        "method": "GET",
-        "headers": {
-            "x-rapidapi-key": "9711bd8aa6msh6284e18a8f73758p17b3bfjsndd4d8e4e8ff4",
-            "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com"
-        }
-    })
-    .then((response) => response.json())
-    
-    .then((data) =>{ console.log(data);})
-     
-    .catch(err => { console.error(err);
-    });
-    
-  
-
-
   };
