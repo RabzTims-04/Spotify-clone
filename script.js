@@ -98,6 +98,83 @@ function heart(){
       audio.currentTime = 0.0;
     });
   }
+
+  const followButton = function(){
+
+   
+    fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-key": "9711bd8aa6msh6284e18a8f73758p17b3bfjsndd4d8e4e8ff4",
+            "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com"
+        }
+    })
+    .then((response) => response.json())
+    
+    .then((eminem) =>{ 
+    console.log(eminem);
+    let followButton = document.querySelector('.artist-follow')
+    let eminemPage = document.querySelector('a[href="eminem.html"] img')
+    let eminemCard = document.querySelectorAll('.eminemCards img')
+     console.log(followButton);
+    console.log(eminemCard);
+    console.log(eminemPage);
+    
+      console.log('click');
+
+      
+        for(let i=0; i<eminem.data.length; i++){
+
+          eminemCard[i].classList.add('img-fluid')
+          eminemCard[i].src = eminem.data[i].album.cover
+        }
+      
+
+      
+   
+  })
+     
+    .catch(err => { console.error(err);
+    });
+
+  }
+
+  const BehemothButton = function(){
+    fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=behemoth", {
+      "method": "GET",
+      "headers": {
+          "x-rapidapi-key": "9711bd8aa6msh6284e18a8f73758p17b3bfjsndd4d8e4e8ff4",
+          "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com"
+      }
+  })
+  .then((response) => response.json())
+  
+  .then((behom) =>{ console.log(behom);
+
+    let followButton = document.querySelector('.artist-follow')
+    let eminemPage = document.querySelector('a[href="eminem.html"] img')
+    let eminemCard = document.querySelectorAll('.eminemCards img')
+     console.log(followButton);
+    console.log(eminemCard);
+    console.log(eminemPage);
+    
+      console.log('click');
+
+      
+        for(let i=0; i<eminem.data.length; i++){
+
+          eminemCard[i].classList.add('img-fluid')
+          eminemCard[i].src = eminem.data[i].album.cover
+        }
+
+  
+  })
+   
+  .catch(err => { console.error(err);
+  });
+
+  }
+
   window.onload = function () {
     play();
     backward();
@@ -106,4 +183,26 @@ function heart(){
     heart();
     cardPlay();
     queenSong();
+   
+
+   
+
+    
+    fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=metallica", {
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-key": "9711bd8aa6msh6284e18a8f73758p17b3bfjsndd4d8e4e8ff4",
+            "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com"
+        }
+    })
+    .then((response) => response.json())
+    
+    .then((data) =>{ console.log(data);})
+     
+    .catch(err => { console.error(err);
+    });
+    
+  
+
+
   };

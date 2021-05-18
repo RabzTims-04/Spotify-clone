@@ -93,13 +93,11 @@
                 <div class="row justify-content-center mt-4 pt-5">
                     <div class="d-flex flex-column text-center z-index:2">
                         <p>33,000,575 MONTHLY LISTENERS</p>
-                        <h1><strong>Queen</strong></h1>
+                        <h1><strong>Eminem</strong></h1>
                         <div class="d-md-flex flex-row text-center mt-3 d-none ">
-                            <button type="button" class=" btn badge-pill btn-primary queen-play playbtn">PLAY</button>
-                            <button type="button" class=" btn badge-pill btn-secondary follow mx-3">FOLLOW</button>
-                            <svg  xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-three-dots " viewBox="0 0 16 16">
-                                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-                              </svg>                  
+                            <button onclick="BehemothButton()" type="button" class=" btn badge-pill btn-primary queen-play playbtn">Behemoth</button>
+                            <button onclick="followButton()" type="button" class=" btn badge-pill btn-secondary follow mx-3 artist-follow">Eminem</button>
+                            <button onclick="MetallicButton()" type="button" class=" btn badge-pill btn-secondary follow mx-3 artist-follow">Metallica</button>                 
                         </div>
 
                         
@@ -136,7 +134,7 @@
                 <!-- Upper body end -->
             </div>
               
-            <section id="cardsDeck" class="artist-cards">
+            <section id="cardsDeck" class="artist-cards eminemCards">
                     <div class="row mx-5">
                       <div id="deckHeader" class="row w-100">
                         <div class="">
@@ -151,7 +149,7 @@
                         <div class="col px-0 mb-4">
                           <div class="card h-100">
                             <a href="album.html">
-                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUaqRn8ruIVbKenwXKFX7a9KQKRLRuQRpS-GsHIyY6qrICzKjlifRmFEC_fj8FGC0sPLs&usqp=CAU" class="card-img-top" alt="...">
+                              <img src="" class="card-img-top" alt="...">
                             </a>
                             <div class="card-play"></div>
                             <!-- <i class="fab fa-spotify"></i> -->
@@ -164,7 +162,7 @@
                         <div class="col px-0 mb-4">
                           <div class="card h-100">
                             <a href="album.html">
-                              <img src="https://bravewords.com/medias-static/images/news/2016%20II/queenonair1.jpg" class="card-img-top" alt="...">
+                              <img src="" class="card-img-top" alt="...">
                             </a>
                             <div class="card-play"></div>  
                             <!-- <i class="fab fa-spotify"></i> -->
@@ -177,7 +175,7 @@
                         <div class="col px-0 mb-4">
                           <div class="card h-100">
                             <a href="album.html">
-                              <img src="https://img.discogs.com/h-NVa4igX-riZjnzVFugzXxiRIo=/fit-in/600x591/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-7739371-1483370708-1554.jpeg.jpg" class="card-img-top" alt="...">
+                              <img src="" class="card-img-top" alt="...">
                             </a>
                             <div class="card-play"></div>  
                             <!-- <i class="fab fa-spotify"></i> -->
@@ -190,7 +188,7 @@
                         <div class="col px-0 mb-4">
                           <div class="card h-100">
                             <a href="album.html">
-                              <img src="https://upload.wikimedia.org/wikipedia/en/2/2d/Live_at_the_Rainbow_%2774.jpg" class="card-img-top" alt="...">
+                              <img src="" class="card-img-top" alt="...">
                             </a>
                             <div class="card-play"></div>  
                             <!-- <i class="fab fa-spotify"></i> -->
@@ -203,7 +201,7 @@
                         <div class="col px-0 mb-4">
                           <div class="card h-100">
                             <a href="album.html">
-                              <img src="https://upload.wikimedia.org/wikipedia/en/2/2d/Live_at_the_Rainbow_%2774.jpg" class="card-img-top" alt="...">
+                              <img src="" class="card-img-top" alt="...">
                             </a>
                             <div class="card-play"></div>  
                             <!-- <i class="fab fa-spotify"></i> -->
@@ -217,7 +215,7 @@
                           <div class="card h-100">
                             <a href="album.html">
                               <img src=
-                              "http://www.potoclips.com/wp-content/uploads/2016/05/Queen-Hungarian-Rhapsody-002.jpg" class="card-img-top" alt="...">
+                              "" class="card-img-top" alt="...">
                             </a>
                             <div class="card-play"></div>  
                             <!-- <i class="fab fa-spotify"></i> -->
@@ -231,7 +229,7 @@
                         <div class="col px-0 mb-4">
                           <div class="card h-100">
                             <a href="album.html">
-                              <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/99/Queen_The_Cosmos_Rocks_Album_Cover.jpg/220px-Queen_The_Cosmos_Rocks_Album_Cover.jpg" class="card-img-top" alt="...">
+                              <img src="" class="card-img-top" alt="...">
                             </a>
                             <div class="card-play"></div>  
                             <!-- <i class="fab fa-spotify"></i> -->
@@ -244,7 +242,7 @@
                         <div class="col px-0 mb-4">
                           <div class="card h-100">
                             <a href="album.html">
-                              <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRK7LeHFWl0atUUd1nHO-yyTRQpFxGSMK9AKnmhtg-TARBnJ0Li6wlK0Q6jhM9YMvpYcd17R9k1038avn3t5S0TVDyyNRBl1kkpo4rDfvP0mMEu1VLNr2H5EeM8-TI&usqp=CAE" class="card-img-top" alt="...">
+                              <img src="" class="card-img-top" alt="...">
                             </a>
                             <div class="card-play"></div>  
                             <!-- <i class="fab fa-spotify"></i> -->
@@ -257,7 +255,7 @@
                         <div class="col px-0 mb-4">
                           <div class="card h-100">
                             <a href="album.html">
-                              <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/Returnofthechampions.jpg" class="card-img-top" alt="...">
+                              <img src="" class="card-img-top" alt="...">
                             </a>
                             <div class="card-play"></div>  
                             <!-- <i class="fab fa-spotify"></i> -->
@@ -270,7 +268,7 @@
                         <div class="col px-0 mb-4">
                           <div class="card h-100">
                             <a href="album.html">
-                              <img src="https://m.media-amazon.com/images/I/81jx9KYIe0L._SS500_.jpg" class="card-img-top" alt="...">
+                              <img src="" class="card-img-top" alt="...">
                             </a>
                             <div class="card-play"></div>  
                             <!-- <i class="fab fa-spotify"></i> -->
@@ -283,7 +281,7 @@
                         <div class="col px-0 mb-4">
                           <div class="card h-100">
                             <a href="album.html">
-                              <img src="http://2.bp.blogspot.com/-W1nK1BnpQm8/Td2ZUZDUsAI/AAAAAAAABi0/SrcHk1yy4DM/s1600/Queen+-+Made+in+Heaven.jpg" class="card-img-top" alt="...">
+                              <img src="" class="card-img-top" alt="...">
                             </a>
                             <div class="card-play"></div>  
                             <!-- <i class="fab fa-spotify"></i> -->
@@ -296,7 +294,7 @@
                         <div class="col px-0 mb-4">
                           <div class="card h-100">
                             <a href="album.html">
-                              <img src="https://www.udiscovermusic.com/wp-content/uploads/2019/05/Queen-Hot-Space-album-cover-820.jpg" class="card-img-top" alt="...">
+                              <img src="" class="card-img-top" alt="...">
                             </a>
                             <div class="card-play"></div>  
                             <!-- <i class="fab fa-spotify"></i> -->
@@ -306,6 +304,178 @@
                             </div>
                           </div>
                         </div>
+
+                        <div class="col px-0 mb-4">
+                            <div class="card h-100">
+                              <a href="album.html">
+                                <img src="" class="card-img-top" alt="...">
+                              </a>
+                              <div class="card-play"></div>  
+                              <!-- <i class="fab fa-spotify"></i> -->
+                              <div class="card-body text-center p-3">
+                                <p class="card-text text-white mb-0 mt-1">Paul Rodgers</p>
+                                <p class="card-text text-muted"><small class="text-muted"><strong>Queen</strong></small></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col px-0 mb-4">
+                            <div class="card h-100">
+                              <a href="album.html">
+                                <img src="" class="card-img-top" alt="...">
+                              </a>
+                              <div class="card-play"></div>  
+                              <!-- <i class="fab fa-spotify"></i> -->
+                              <div class="card-body text-center p-3">
+                                <p class="card-text text-white mb-0 mt-1">Greatest Hits II</p>
+                                <p class="card-text text-muted"><small class="text-muted"><strong>Queen</strong></small></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col px-0 mb-4">
+                            <div class="card h-100">
+                              <a href="album.html">
+                                <img src="" class="card-img-top" alt="...">
+                              </a>
+                              <div class="card-play"></div>  
+                              <!-- <i class="fab fa-spotify"></i> -->
+                              <div class="card-body text-center p-3">
+                                <p class="card-text text-white mb-0 mt-1">Return Of The Champions</p>
+                                <p class="card-text text-muted"><small class="text-muted"><strong>Queen</strong></small></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col px-0 mb-4">
+                            <div class="card h-100">
+                              <a href="album.html">
+                                <img src="" class="card-img-top" alt="...">
+                              </a>
+                              <div class="card-play"></div>  
+                              <!-- <i class="fab fa-spotify"></i> -->
+                              <div class="card-body text-center p-3">
+                                <p class="card-text text-white mb-0 mt-1">On Fire (Live At The Bowl)</p>
+                                <p class="card-text text-muted"><small class="text-muted"><strong>Queen</strong></small></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col px-0 mb-4">
+                            <div class="card h-100">
+                              <a href="album.html">
+                                <img src="" class="card-img-top" alt="...">
+                              </a>
+                              <div class="card-play"></div>  
+                              <!-- <i class="fab fa-spotify"></i> -->
+                              <div class="card-body text-center p-3">
+                                <p class="card-text text-white mb-0 mt-1">Made in Heaven</p>
+                                <p class="card-text text-muted"><small class="text-muted"><strong>Queen</strong></small></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col px-0 mb-4">
+                            <div class="card h-100">
+                              <a href="album.html">
+                                <img src="" class="card-img-top" alt="...">
+                              </a>
+                              <div class="card-play"></div>  
+                              <!-- <i class="fab fa-spotify"></i> -->
+                              <div class="card-body text-center p-3">
+                                <p class="card-text text-white mb-0 mt-1">Hot Space</p>
+                                <p class="card-text text-muted"><small class="text-muted"><strong>Queen</strong></small></p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col px-0 mb-4">
+                            <div class="card h-100">
+                              <a href="album.html">
+                                <img src="" class="card-img-top" alt="...">
+                              </a>
+                              <div class="card-play"></div>  
+                              <!-- <i class="fab fa-spotify"></i> -->
+                              <div class="card-body text-center p-3">
+                                <p class="card-text text-white mb-0 mt-1">Paul Rodgers</p>
+                                <p class="card-text text-muted"><small class="text-muted"><strong>Queen</strong></small></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col px-0 mb-4">
+                            <div class="card h-100">
+                              <a href="album.html">
+                                <img src="" class="card-img-top" alt="...">
+                              </a>
+                              <div class="card-play"></div>  
+                              <!-- <i class="fab fa-spotify"></i> -->
+                              <div class="card-body text-center p-3">
+                                <p class="card-text text-white mb-0 mt-1">Greatest Hits II</p>
+                                <p class="card-text text-muted"><small class="text-muted"><strong>Queen</strong></small></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col px-0 mb-4">
+                            <div class="card h-100">
+                              <a href="album.html">
+                                <img src="" class="card-img-top" alt="...">
+                              </a>
+                              <div class="card-play"></div>  
+                              <!-- <i class="fab fa-spotify"></i> -->
+                              <div class="card-body text-center p-3">
+                                <p class="card-text text-white mb-0 mt-1">Return Of The Champions</p>
+                                <p class="card-text text-muted"><small class="text-muted"><strong>Queen</strong></small></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col px-0 mb-4">
+                            <div class="card h-100">
+                              <a href="album.html">
+                                <img src="" class="card-img-top" alt="...">
+                              </a>
+                              <div class="card-play"></div>  
+                              <!-- <i class="fab fa-spotify"></i> -->
+                              <div class="card-body text-center p-3">
+                                <p class="card-text text-white mb-0 mt-1">On Fire (Live At The Bowl)</p>
+                                <p class="card-text text-muted"><small class="text-muted"><strong>Queen</strong></small></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col px-0 mb-4">
+                            <div class="card h-100">
+                              <a href="album.html">
+                                <img src="" class="card-img-top" alt="...">
+                              </a>
+                              <div class="card-play"></div>  
+                              <!-- <i class="fab fa-spotify"></i> -->
+                              <div class="card-body text-center p-3">
+                                <p class="card-text text-white mb-0 mt-1">Made in Heaven</p>
+                                <p class="card-text text-muted"><small class="text-muted"><strong>Queen</strong></small></p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col px-0 mb-4">
+                            <div class="card h-100">
+                              <a href="album.html">
+                                <img src="" class="card-img-top" alt="...">
+                              </a>
+                              <div class="card-play"></div>  
+                              <!-- <i class="fab fa-spotify"></i> -->
+                              <div class="card-body text-center p-3">
+                                <p class="card-text text-white mb-0 mt-1">Hot Space</p>
+                                <p class="card-text text-muted"><small class="text-muted"><strong>Queen</strong></small></p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col px-0 mb-4">
+                            <div class="card h-100">
+                              <a href="album.html">
+                                <img src="" class="card-img-top" alt="...">
+                              </a>
+                              <div class="card-play"></div>  
+                              <!-- <i class="fab fa-spotify"></i> -->
+                              <div class="card-body text-center p-3">
+                                <p class="card-text text-white mb-0 mt-1">Hot Space</p>
+                                <p class="card-text text-muted"><small class="text-muted"><strong>Queen</strong></small></p>
+                              </div>
+                            </div>
+                          </div>
                       </div>
                     </div>
             </section>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      button {
+        padding: 0;
+        border: 0;
+        background: inherit;
+        cursor: pointer;
+        outline: none;
+        width: 40px;
+        height: 40px;
+      }
+      #audio-player-container {
+        position: relative;
+        margin: 100px 5% auto 5%;
+        width: 90%;
+        max-width: 500px;
+        height: 80px;
+        background: #fff;
+      }
+      #audio-player-container::before {
+        position: absolute;
+        content: "";
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        left: -2px;
+        top: -2px;
+        background: linear-gradient(to left, #007db5, #ff8a00);
+        z-index: -1;
+      }
+      p {
+        position: absolute;
+        top: -18px;
+        right: 5%;
+        padding: 0 5px;
+        margin: 0;
+        font-size: 28px;
+        background: #fff;
+      }
+      #play-icon {
+        margin: 20px 2.5% 20px 2.5%;
+      }
+      path {
+        stroke: #007db5;
+      }
+    </style>
+  </head>
+  <body>
+    <!--  <audio controls id="myAudio">
+        <source
+          src="footerassets/Michael-Jackson-Smooth-Criminal.mp3"
+          type="audio/mpeg" 
+        />
+        Your browser does not support the audio element.
+      </audio> -->
+
+    <div id="audio-player-container">
+      <p>audio player ish</p>
+      <button id="play-icon"></button>
+    </div>
+
+    <script>
+      import lottieWeb from "https://cdn.skypack.dev/lottie-web";
+
+      const playIconContainer = document.getElementById("play-icon");
+      let state = "play";
+      const animation = lottieWeb.loadAnimation({
+        container: playIconContainer,
+        path: "https://maxst.icons8.com/vue-static/landings/animated-icons/icons/pause/pause.json",
+        renderer: "svg",
+        loop: false,
+        autoplay: false,
+        name: "Demo Animation",
+      });
+
+      animation.goToAndStop(14, true);
+
+      playIconContainer.addEventListener("click", () => {
+        if (state === "play") {
+          animation.playSegments([14, 27], true);
+          state = "pause";
+        } else {
+          animation.playSegments([0, 14], true);
+          state = "play";
+        }
+      });
+    </script>
+  </body>
+</html>
